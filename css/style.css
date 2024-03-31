@@ -24,7 +24,7 @@ img{
 
 .container{
 width: 1158px;
-padding: 0 15; 
+padding: 0 15px; 
 margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@ border-bottom: 1px solid #e7e9fc;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5; 
-    padding-right: 76px;  
+    margin-right: 76px;  
 }
 
 .accent {
@@ -60,7 +60,7 @@ color: #2e2f42;
 
 .menu-nav-list{
     display: flex;
-    gap: 40px;
+    gap: 40px; 
     padding: 24px 0;
 }
 
@@ -70,6 +70,7 @@ color: #2e2f42;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    
 }
 
 .menu-nav-item:hover,
@@ -140,6 +141,7 @@ height: 56px;
 display: block;
 margin: 0 auto;
 padding: 16px 32px;
+border: none;
 }
 
 .solution-button:hover,
@@ -171,6 +173,10 @@ background-color: #404bbf;
 .advantages-list{
 display: flex;
 gap: 24px;
+}
+
+.advantages-item{
+flex-basis: calc((100% - 72px) / 4)
 }
 
 .advantages-list-subtitle {
@@ -209,13 +215,13 @@ letter-spacing: 0.02em;
 
 .team-list{
     display: flex;
-    gap: 24px;
-    flex-basis: calc((100% - 72px) / 4);
+    gap: 24px;   
 }
 
 .team-list-inform{
 background: #fff;
 border-radius: 0 0 4px 4px;
+flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-name{
@@ -262,19 +268,19 @@ margin-bottom: 72px;
 .portfolio-list{
 display: flex;
 flex-wrap: wrap;
-gap: 24px;
-flex-basis: calc((100% - 72px) / 3)
+column-gap: 24px;
+row-gap: 48px;
 }
 
-.portfolio-list-item {
+.portfolio-list-item{
 background-color: #fff;
-border-bottom: 1px solid #e7e9fc;
-border-left: 1px solid #e7e9fc;
-border-right: 1px solid #e7e9fc;
+width: calc((100% - 48px) / 3)
 }
 
-.portfolio-image{
-    margin-bottom: 32px;
+.portfolio-dscr{
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
 }
 
 .portfolio-list-subtitle {
@@ -283,7 +289,6 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
-margin-left: 16px;
 margin-bottom: 8px;
 }
 
@@ -305,6 +310,10 @@ padding-top: 100px;
 padding-bottom: 100px;
 }
 
+.logo{
+    display: inline-block;
+    margin-bottom: 16px;
+}
 .accent-footer{
 font-family: "Raleway", sans-serif;
 font-weight: 700;
@@ -321,6 +330,5 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
 max-width: 264px;
-margin-top: 16px;
 }
 /* /Footer */
